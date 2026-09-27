@@ -1,0 +1,26 @@
+{
+  "name": "harmony-photo-editor",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Browser photo editor that detects colour harmony and lets you change the intensity of individual colours, objects, sky and greenery while keeping people's faces untouched.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "setup:offline": "node scripts/setup-offline.mjs"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "0.10.14",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.11"
+  }
+}
